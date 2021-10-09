@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../static/assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../static/assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../static/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="container-fluid page-body-wrapper">
+        <div class="main-panel" style="width: calc(100% - 0px); min-height: calc(100vh - 0px);">
+          <div class="content-wrapper bg-gradient-primary">
+            <div style="position: absolute; top: 45%; left: 50%; margin: 0 -50% 0 0; transform: translate(-50%, -50%);">
+              <div class="text-center align-content-center">
+                <span class="display-1 font-weight-bolder "> <span class="text-light display-3">WELCOME TO</span>
+                  <div></div>
+                  <span class="text-light" style="font-size: 100px">DINE BRAND</span>
+                  <div></div>
+                  <span class="text-light display-2 font-weight-normal">SENTIMENT ANALYSIS</span>
+                </span>
+              </div>
+              <br>
+              <br>
+              <div class="text-center">
+                <a href="/index"><button type="button" class="btn btn-outline-light btn-fw">Start</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <div class="bg-gradient-danger">
+        <div id="myBar" class="bg-green-gradient" style="height:24px;width:0"></div>
+    </div>
+    <button class="w3-button w3-green" onclick="move()">Click Me</button>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../static/assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../static/assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="../static/assets/js/off-canvas.js"></script>
+    <script src="../static/assets/js/hoverable-collapse.js"></script>
+    <script src="../static/assets/js/misc.js"></script>
+    <script src="../static/assets/js/dashboard.js"></script>
+    <script src="../static/assets/js/todolist.js"></script>
+    <script src="../static/assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
+    <script>
+        function move() {
+          var elem = document.getElementById("myBar");
+          var width = 1;
+          var id = setInterval(frame, 100);
+          function frame() {
+            if (width >= 100) {
+              clearInterval(id);
+            } else {
+              width++;
+              elem.style.width = width + '%';
+            }
+          }
+        }
+    </script>
+  </body>
+</html>
